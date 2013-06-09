@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Facebook Login Button -->
+
+    <Button
+        android:id="@+id/btn_fblogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Authenticate with Facebook" />
+
+    <!-- user name label -->
+
+    <TextView
+        android:id="@+id/fb_UserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" />
+
+    <!-- Post to wall text_view -->
+
+    <TextView
+        android:id="@+id/lblpost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="Post To Wall"
+        android:visibility="gone" />
+
+    <!-- Facebook EditText -->
+
+
+	  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+    <EditText
+        android:id="@+id/et_posttowall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_margin="10dip"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btn_mic"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/mic"
+        android:visibility="gone" />
+    
+    </LinearLayout>
+
+    <!-- Facebook Post to Wall Button -->
+
+    <Button
+        android:id="@+id/btn_fb_post_to_wall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="Post to Wall"
+        android:visibility="gone" />
+
+    <!-- Facebook GetData Button -->
+
+    <Button
+        android:id="@+id/btn_get_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Get Profile Data"
+        android:visibility="gone" />
+
+    <!-- Button to show access tokens -->
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Logout from FB"
+        android:visibility="gone" />
+
+</LinearLayout>

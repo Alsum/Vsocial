@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Twitter Login Button -->
+
+    <Button
+        android:id="@+id/btnLoginTwitter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Authenticate with Twitter" />
+
+    <!-- user name label -->
+
+    <TextView
+        android:id="@+id/lblUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" />
+
+    <!-- label update status -->
+
+    <TextView
+        android:id="@+id/lblUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="Update Status"
+        android:visibility="gone" />
+
+    <!-- Tweet EditText and mic -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/txtUpdateStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_weight="3"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/img_btn" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/mic"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Tweet Button -->
+
+    <Button
+        android:id="@+id/btnUpdateStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="Tweet"
+        android:visibility="gone" />
+
+    <!-- Read timeline -->
+
+    <Button
+        android:id="@+id/btnReadTimeline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Read Timeline"
+        android:visibility="gone" />
+
+    <!-- Twitter Logout button -->
+
+    <Button
+        android:id="@+id/btnLogoutTwitter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Logout from Twitter"
+        android:visibility="gone" />
+
+</LinearLayout>

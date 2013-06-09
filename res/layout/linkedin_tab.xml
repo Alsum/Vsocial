@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Linkedin Login Button -->
+
+    <Button
+        android:id="@+id/btnLoginLinked"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Authenticate with Linkedin" />
+
+    <!-- user name label -->
+
+    <TextView
+        android:id="@+id/lblUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" />
+
+    <!-- label post -->
+
+    <TextView
+        android:id="@+id/lblPost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="Post Msg"
+        android:visibility="gone" />
+
+    <!-- Linked EditText and mic -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/txtUpdateStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_weight="3"
+            android:visibility="gone"/>
+        
+        <ImageButton
+            android:id="@+id/img_btn" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/mic"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Post Button -->
+
+    <Button
+        android:id="@+id/btnUpdateStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="Post to Linkedin"
+        android:visibility="gone" />
+
+    <!-- Read profile data -->
+
+    <Button
+        android:id="@+id/btnReadProfileData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Get Profile Data"
+        android:visibility="gone" />
+
+    <!-- Twitter Logout button -->
+
+    <Button
+        android:id="@+id/btnLogoutLinked"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:text="Logout from Linkedin"
+        android:visibility="gone" />
+
+</LinearLayout>
